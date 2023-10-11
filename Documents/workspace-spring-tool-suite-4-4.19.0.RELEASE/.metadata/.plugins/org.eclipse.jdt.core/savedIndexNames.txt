@@ -31,7 +31,6 @@ INDEX VERSION 1.134+C:\Users\berzi\Documents\workspace-spring-tool-suite-4-4.19.
 3320404600.index
 3423056129.index
 3099534700.index
-2036812646.index
 780840520.index
 2556286806.index
 3158168544.index
@@ -47,10 +46,8 @@ INDEX VERSION 1.134+C:\Users\berzi\Documents\workspace-spring-tool-suite-4-4.19.
 819655620.index
 35162927.index
 3136461599.index
-2401825800.index
 2826135651.index
 809459370.index
-2692459782.index
 1281885137.index
 2518772350.index
 1946084093.index
@@ -164,7 +161,6 @@ INDEX VERSION 1.134+C:\Users\berzi\Documents\workspace-spring-tool-suite-4-4.19.
 487940898.index
 580015535.index
 2079468324.index
-1658815523.index
 2810723111.index
 3795401596.index
 2280460592.index
