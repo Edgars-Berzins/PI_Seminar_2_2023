@@ -1,0 +1,14 @@
+package lv.vaits.user.repos.users;
+
+import org.springframework.data.repository.CrudRepository;
+
+import lv.vaits.user.models.users.Authorities;
+import lv.vaits.user.models.users.User;
+
+public interface IAuthorityRepo extends CrudRepository<Authorities, Long> {
+
+	User findByUsername(String var);
+
+	User findByMyUserId(int var);
+
+}

@@ -1,0 +1,19 @@
+package lv.vaits.main;
+
+import java.time.LocalDate;
+import java.time.LocalDateTime;
+
+import org.springframework.boot.CommandLineRunner;
+import org.springframework.boot.SpringApplication;
+import org.springframework.boot.autoconfigure.SpringBootApplication;
+import org.springframework.context.annotation.Bean;
+
+@SpringBootApplication(scanBasePackages = { "lv.vaits.vaits-micro", "lv.vaits.microservice-user",
+		"lv.vaits.microservice-VAITS-web" })
+public class VaitsApplication {
+
+	public static void main(String[] args) {
+		SpringApplication.run(VaitsApplication.class, args);
+	}
+
+}

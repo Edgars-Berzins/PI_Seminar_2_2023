@@ -1,0 +1,11 @@
+C:\Users\berzi\Documents\workspace-spring-tool-suite-4-4.19.0.RELEASE\vaits-micro\microservice-user\src\main\java\lv\vaits\user\confs\SecurityConfig.java
+C:\Users\berzi\Documents\workspace-spring-tool-suite-4-4.19.0.RELEASE\vaits-micro\microservice-user\src\main\java\lv\vaits\user\repos\users\IAuthorityRepo.java
+C:\Users\berzi\Documents\workspace-spring-tool-suite-4-4.19.0.RELEASE\vaits-micro\microservice-user\src\main\java\lv\vaits\user\repos\users\IUserRepo.java
+C:\Users\berzi\Documents\workspace-spring-tool-suite-4-4.19.0.RELEASE\vaits-micro\microservice-user\src\main\java\lv\vaits\user\services\users\impl\MyUserDetailsManagerImpl.java
+C:\Users\berzi\Documents\workspace-spring-tool-suite-4-4.19.0.RELEASE\vaits-micro\microservice-user\src\main\java\lv\vaits\user\UserApplication.java
+C:\Users\berzi\Documents\workspace-spring-tool-suite-4-4.19.0.RELEASE\vaits-micro\microservice-user\src\main\java\lv\vaits\user\services\users\impl\UserServicesImplementation.java
+C:\Users\berzi\Documents\workspace-spring-tool-suite-4-4.19.0.RELEASE\vaits-micro\microservice-user\src\main\java\lv\vaits\user\models\users\User.java
+C:\Users\berzi\Documents\workspace-spring-tool-suite-4-4.19.0.RELEASE\vaits-micro\microservice-user\src\main\java\lv\vaits\user\models\users\Authorities.java
+C:\Users\berzi\Documents\workspace-spring-tool-suite-4-4.19.0.RELEASE\vaits-micro\microservice-user\src\main\java\lv\vaits\user\controllers\users\UtilsController.java
+C:\Users\berzi\Documents\workspace-spring-tool-suite-4-4.19.0.RELEASE\vaits-micro\microservice-user\src\main\java\lv\vaits\user\services\users\IUserServices.java
+C:\Users\berzi\Documents\workspace-spring-tool-suite-4-4.19.0.RELEASE\vaits-micro\microservice-user\src\main\java\lv\vaits\user\utils\MyUserDetails.java

@@ -1,0 +1,41 @@
+package lv.vaits.user;
+
+import java.time.LocalDate;
+import java.time.LocalDateTime;
+
+import org.springframework.boot.CommandLineRunner;
+import org.springframework.boot.SpringApplication;
+import org.springframework.boot.autoconfigure.SpringBootApplication;
+import org.springframework.context.annotation.Bean;
+
+import lv.vaits.user.models.users.User;
+import lv.vaits.user.repos.users.IUserRepo;
+
+@SpringBootApplication(scanBasePackages = { "lv.venta.vaits.vaits-micro", "lv.venta.microservice-VAITS-web" })
+public class UserApplication {
+
+	public static void main(String[] args) {
+		SpringApplication.run(UserApplication.class, args);
+	}
+
+	@Bean
+	public CommandLineRunner testModelLayer(final IUserRepo userRepo) {
+		return new CommandLineRunner() {
+
+			@Override
+			public void run(String... args) throws Exception {
+				User us1 = new User("123", "s22zvejlaur@venta.lv"); // pasniedzejs
+				User us2 = new User("123", "s23zvejlaur@venta.lv"); // pasniedzejs
+				User us3 = new User("123", "s24zvejlaur@venta.lv"); // students
+				User us4 = new User("123", "s25zvejlaur@venta.lv"); // students
+				User us5 = new User("555", "venta@venta.lv"); // students
+				userRepo.save(us1);
+				userRepo.save(us2);
+				userRepo.save(us3);
+				userRepo.save(us4);
+				userRepo.save(us5);
+
+			}
+		};
+	}
+}

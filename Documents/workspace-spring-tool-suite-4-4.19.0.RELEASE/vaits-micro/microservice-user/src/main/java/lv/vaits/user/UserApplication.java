@@ -1,0 +1,55 @@
+package lv.vaits.user;
+
+import org.springframework.boot.CommandLineRunner;
+import org.springframework.boot.SpringApplication;
+import org.springframework.boot.autoconfigure.SpringBootApplication;
+import org.springframework.context.annotation.Bean;
+import org.springframework.security.crypto.factory.PasswordEncoderFactories;
+import org.springframework.security.crypto.password.PasswordEncoder;
+
+import lv.vaits.user.models.users.Authorities;
+import lv.vaits.user.models.users.User;
+import lv.vaits.user.repos.users.IAuthorityRepo;
+import lv.vaits.user.repos.users.IUserRepo;
+
+@SpringBootApplication(scanBasePackages = { "lv.vaits.vaits-micro", "lv.vaits.microservice-user",
+		"lv.vaits.microservice-VAITS-web" })
+public class UserApplication {
+
+	public static void main(String[] args) {
+		SpringApplication.run(UserApplication.class, args);
+	}
+
+	@Bean
+	public PasswordEncoder passwordEncoderSimple() {
+		return PasswordEncoderFactories.createDelegatingPasswordEncoder();
+	}
+
+	@Bean
+	public CommandLineRunner testDB(final IUserRepo userRepo, final IAuthorityRepo authorityRepo) {
+		return new CommandLineRunner() {
+
+			@Override
+			public void run(String... args) throws Exception {
+				User us1 = new User(passwordEncoderSimple().encode("123"), "s22zvejlaur@venta.lv", "laura");
+
+				userRepo.save(us1);
+
+				Authorities auth1 = new Authorities("ADMIN");
+				Authorities auth2 = new Authorities("USER");
+
+				auth1.addUser(us1);
+				auth2.addUser(us1);
+
+				authorityRepo.save(auth1);
+				authorityRepo.save(auth2);
+
+				us1.addAuthority(auth1);
+				us1.addAuthority(auth2);
+
+				userRepo.save(us1);
+
+			}
+		};
+	}
+}

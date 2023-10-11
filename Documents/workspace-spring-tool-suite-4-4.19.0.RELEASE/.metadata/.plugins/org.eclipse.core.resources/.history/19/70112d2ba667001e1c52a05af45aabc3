@@ -1,0 +1,5 @@
+package lv.vaits.user.models.users;
+
+public class Authorities {
+
+}

@@ -1,0 +1,12 @@
+lv\vaits\user\repos\users\IUserRepo.class
+lv\vaits\user\services\users\impl\UserServicesImplementation.class
+lv\vaits\user\utils\MyUserDetails.class
+lv\vaits\user\repos\users\IAuthorityRepo.class
+lv\vaits\user\controllers\users\UtilsController.class
+lv\vaits\user\services\users\IUserServices.class
+lv\vaits\user\services\users\impl\MyUserDetailsManagerImpl.class
+lv\vaits\user\UserApplication.class
+lv\vaits\user\confs\SecurityConfig.class
+lv\vaits\user\models\users\Authorities.class
+lv\vaits\user\UserApplication$1.class
+lv\vaits\user\models\users\User.class
