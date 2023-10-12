@@ -15,3 +15,5 @@
 1696945507159	Rename type 'VaitsApplication'
 1696945577816	Rename package 'lv.vaits'
 1697011470106	Delete element
+1697046681774	Delete element
+1697049857304	Move 'access-denied.html' to 'templates'

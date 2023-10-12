@@ -31,6 +31,7 @@ C:\Users\berzi\Documents\workspace-spring-tool-suite-4-4.19.0.RELEASE\vaits-micr
 C:\Users\berzi\Documents\workspace-spring-tool-suite-4-4.19.0.RELEASE\vaits-micro\microservice-VAITS-web\src\main\java\lv\vaits\models\OtherApplications.java
 C:\Users\berzi\Documents\workspace-spring-tool-suite-4-4.19.0.RELEASE\vaits-micro\microservice-VAITS-web\src\main\java\lv\vaits\services\users\impl\StudentServicesImplementation.java
 C:\Users\berzi\Documents\workspace-spring-tool-suite-4-4.19.0.RELEASE\vaits-micro\microservice-VAITS-web\src\main\java\lv\vaits\repos\users\IStudentRepo.java
+C:\Users\berzi\Documents\workspace-spring-tool-suite-4-4.19.0.RELEASE\vaits-micro\microservice-VAITS-web\src\main\java\lv\vaits\services\users\impl\PersonServicesImplementation.java
 C:\Users\berzi\Documents\workspace-spring-tool-suite-4-4.19.0.RELEASE\vaits-micro\microservice-VAITS-web\src\main\java\lv\vaits\controllers\CommentController.java
 C:\Users\berzi\Documents\workspace-spring-tool-suite-4-4.19.0.RELEASE\vaits-micro\microservice-VAITS-web\src\main\java\lv\vaits\services\users\impl\AcademicStaffServicesImplementation.java
 C:\Users\berzi\Documents\workspace-spring-tool-suite-4-4.19.0.RELEASE\vaits-micro\microservice-VAITS-web\src\main\java\lv\vaits\repos\users\IAcademicStaffRepo.java
@@ -41,5 +42,6 @@ C:\Users\berzi\Documents\workspace-spring-tool-suite-4-4.19.0.RELEASE\vaits-micr
 C:\Users\berzi\Documents\workspace-spring-tool-suite-4-4.19.0.RELEASE\vaits-micro\microservice-VAITS-web\src\main\java\lv\vaits\repos\IMessageRepo.java
 C:\Users\berzi\Documents\workspace-spring-tool-suite-4-4.19.0.RELEASE\vaits-micro\microservice-VAITS-web\src\main\java\lv\vaits\controllers\CourseController.java
 C:\Users\berzi\Documents\workspace-spring-tool-suite-4-4.19.0.RELEASE\vaits-micro\microservice-VAITS-web\src\main\java\lv\vaits\models\users\AcademicStaff.java
+C:\Users\berzi\Documents\workspace-spring-tool-suite-4-4.19.0.RELEASE\vaits-micro\microservice-VAITS-web\src\main\java\lv\vaits\services\users\IPersonServices.java
 C:\Users\berzi\Documents\workspace-spring-tool-suite-4-4.19.0.RELEASE\vaits-micro\microservice-VAITS-web\src\main\java\lv\vaits\repos\users\IPersonRepo.java
 C:\Users\berzi\Documents\workspace-spring-tool-suite-4-4.19.0.RELEASE\vaits-micro\microservice-VAITS-web\src\main\java\lv\vaits\services\users\IStudentServices.java

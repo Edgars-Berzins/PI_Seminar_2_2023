@@ -19,10 +19,6 @@ import lv.vaits.user.services.users.impl.MyUserDetailsManagerImpl;
 @EnableWebSecurity
 public class SecurityConfig {
 
-	@Bean
-	public WebSecurityCustomizer webSecurityCustomizer() {
-		return (web) -> web.ignoring().requestMatchers(new AntPathRequestMatcher("/h2-console/**"));
-	}
 
 	@Bean
 	public MyUserDetailsManagerImpl userDetailsManager() {
@@ -71,8 +67,8 @@ public class SecurityConfig {
 		.requestMatchers("/thesis/update/**").hasAnyAuthority("ADMIN")
 		.requestMatchers("/thesis/error").permitAll()
 		.requestMatchers("/thesis/remove/**").hasAnyAuthority("ADMIN")
-		.requestMatchers("/thesis/changeSupervisor/**/**").hasAnyAuthority("ADMIN")
-		.requestMatchers("/thesis/addReviewerByThesisId/**/**").hasAnyAuthority("ADMIN")
+		.requestMatchers("/thesis/changeSupervisor/**").hasAnyAuthority("ADMIN")
+		.requestMatchers("/thesis/addReviewerByThesisId/**").hasAnyAuthority("ADMIN")
 		.requestMatchers("/thesis/updateStatus/**").hasAnyAuthority("ADMIN")
 		.requestMatchers("/thesis/export").permitAll()
 		.requestMatchers("/course/addNew").hasAnyAuthority("ADMIN")
@@ -92,7 +88,6 @@ public class SecurityConfig {
 		.requestMatchers("/comment/showAll/**").hasAnyAuthority("ADMIN")
 		.requestMatchers("/comment/remove/**").hasAnyAuthority("ADMIN")
 		.requestMatchers("/thesis/showAllComments/**").hasAnyAuthority("ADMIN")
-		.requestMatchers("/h2-console").permitAll().requestMatchers("/h2-console/**").permitAll()
 		.dispatcherTypeMatchers(DispatcherType.FORWARD).permitAll().and().formLogin()
 		.permitAll().and().logout().permitAll().and().exceptionHandling().accessDeniedPage("/my-access-denied");
 

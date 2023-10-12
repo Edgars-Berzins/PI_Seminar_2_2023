@@ -11,6 +11,7 @@ lv\vaits\controllers\CourseController.class
 lv\vaits\controllers\CommentController.class
 lv\vaits\models\Faculty.class
 lv\vaits\repos\users\IPersonRepo.class
+lv\vaits\services\users\impl\PersonServicesImplementation.class
 lv\vaits\models\OtherApplications.class
 lv\vaits\repos\ICalendarSchedule.class
 lv\vaits\services\ICourseServices.class
@@ -42,5 +43,6 @@ lv\vaits\models\users\Person.class
 lv\vaits\models\CalendarSchedule.class
 lv\vaits\VaitsWeb.class
 lv\vaits\services\users\IAcademicStaffServices.class
+lv\vaits\services\users\IPersonServices.class
 lv\vaits\services\ICommentsServices.class
 lv\vaits\services\users\IStudentServices.class

@@ -10,7 +10,9 @@ import org.springframework.web.bind.annotation.PostMapping;
 
 import jakarta.validation.Valid;
 import lv.vaits.models.users.AcademicStaff;
+import lv.vaits.repos.users.IPersonRepo;
 import lv.vaits.services.users.IAcademicStaffServices;
+import lv.vaits.services.users.IPersonServices;
 
 @Controller
 public class AcademicStaffController {
@@ -18,11 +20,14 @@ public class AcademicStaffController {
 	@Autowired
 	private IAcademicStaffServices academicStaffServices;
 
-	//@GetMapping("/academicStaff/create")
-	//public String createAcademicStaffGetFunc(AcademicStaff academicStaff, Model model) {
-	//	model.addAttribute("allUsers", userServices.retrieveAllUsers());
-	//	return "academicStaff-create-page";
-	//}
+	@Autowired
+	private IPersonServices personServices;
+
+	@GetMapping("/academicStaff/create")
+	public String createAcademicStaffGetFunc(AcademicStaff academicStaff, Model model) {
+		model.addAttribute("allPersons", personServices.retrieveAllPersons());
+		return "academicStaff-create-page";
+	}
 
 	@PostMapping("/academicStaff/create")
 	public String createAcademicStaffPostFunc(@Valid AcademicStaff academicStaff, BindingResult result) {
@@ -35,16 +40,16 @@ public class AcademicStaffController {
 		}
 	}
 
-	//@GetMapping("/academicStaff/update/{id}")
-	//public String updateAcademicStaffMemberByIdGetFunc(@PathVariable("id") Long id, Model model) {
-	//	try {
-	//		model.addAttribute("academicStaff", academicStaffServices.retrieveAcademicStaffMemberById(id));
-	//		model.addAttribute("allUsers", userServices.retrieveAllUsers());
-	//		return "academicStaff-update-page";
-	//	} catch (Exception e) {
-	//		return "error-page";
-	//	}
-	//}
+	@GetMapping("/academicStaff/update/{id}")
+	public String updateAcademicStaffMemberByIdGetFunc(@PathVariable("id") Long id, Model model) {
+		try {
+			model.addAttribute("academicStaff", academicStaffServices.retrieveAcademicStaffMemberById(id));
+			model.addAttribute("allUsers", personServices.retrieveAllPersons());
+			return "academicStaff-update-page";
+		} catch (Exception e) {
+			return "error-page";
+		}
+	}
 
 	@PostMapping("/academicStaff/update/{id}")
 	public String updateAcademicStaffMemberByIdPostFunc(@PathVariable("id") Long id, @Valid AcademicStaff academicStaff,

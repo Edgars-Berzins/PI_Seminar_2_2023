@@ -1,0 +1,16 @@
+package lv.vaits.main;
+
+import org.springframework.boot.SpringApplication;
+import org.springframework.boot.autoconfigure.SpringBootApplication;
+import org.springframework.boot.autoconfigure.jdbc.DataSourceAutoConfiguration;
+
+@SpringBootApplication(scanBasePackages = { "lv.vaits.user", "lv.vaits", "lv.vaits.main" }, exclude = {
+		DataSourceAutoConfiguration.class })
+
+public class VaitsApplication {
+
+	public static void main(String[] args) {
+		SpringApplication.run(VaitsApplication.class, args);
+	}
+
+}

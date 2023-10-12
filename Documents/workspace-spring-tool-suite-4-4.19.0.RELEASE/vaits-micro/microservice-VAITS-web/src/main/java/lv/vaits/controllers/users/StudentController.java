@@ -26,11 +26,14 @@ public class StudentController {
 	@Autowired
 	private IAcademicStaffServices academicStaffServices;
 
-	//@GetMapping("/student/addNew")
-	//public String insertStudentGetFunc(Student student, Model model) {
-	//	model.addAttribute("allUsers", userServices.retrieveAllUsers());
-	//	return "student-add-page";
-	//}
+	@Autowired
+	private IPersonServices personServices;
+
+	@GetMapping("/student/addNew")
+	public String insertStudentGetFunc(Student student, Model model) {
+		model.addAttribute("allUsers", personServices.retrieveAllPersons());
+		return "student-add-page";
+	}
 
 	@PostMapping("/student/addNew")
 	public String insertStudentPostFunc(@Valid Student student, BindingResult result) {
@@ -59,16 +62,16 @@ public class StudentController {
 		return "student-all-page";
 	}
 
-	//@GetMapping("/student/update/{id}")
-	//public String updateStudentByIdGetFunc(@PathVariable("id") Long id, Model model) {
-	//	try {
-	//		model.addAttribute("student", studentServices.retrieveStudentById(id));
-	//		model.addAttribute("allUsers", userServices.retrieveAllUsers());
-	//		return "student-update-page";
-	//	} catch (Exception e) {
-	//		return "error-page";
-	//	}
-	//}
+	@GetMapping("/student/update/{id}")
+	public String updateStudentByIdGetFunc(@PathVariable("id") Long id, Model model) {
+		try {
+			model.addAttribute("student", studentServices.retrieveStudentById(id));
+			model.addAttribute("allUsers", personServices.retrieveAllPersons());
+			return "student-update-page";
+		} catch (Exception e) {
+			return "error-page";
+		}
+	}
 
 	@PostMapping("/student/update/{id}")
 	public String updateStudentByIdPostFunc(@PathVariable("id") Long id, @Valid Student student, BindingResult result) {

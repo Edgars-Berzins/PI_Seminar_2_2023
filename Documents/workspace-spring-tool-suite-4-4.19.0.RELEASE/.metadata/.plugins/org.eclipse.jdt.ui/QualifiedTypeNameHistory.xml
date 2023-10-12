@@ -1,16 +1,8 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <qualifiedTypeNameHistroy>
-    <fullyQualifiedTypeName name="lv.vaits.repos.users.IUserRepo"/>
-    <fullyQualifiedTypeName name="lv.vaits.services.users.IUserServices"/>
-    <fullyQualifiedTypeName name="lv.vaits.repos.IStudyProgramRepo"/>
-    <fullyQualifiedTypeName name="jakarta.validation.Valid"/>
-    <fullyQualifiedTypeName name="org.springframework.web.bind.annotation.ModelAttribute"/>
-    <fullyQualifiedTypeName name="jakarta.validation.constraints.AssertFalse.List"/>
-    <fullyQualifiedTypeName name="java.util.List"/>
     <fullyQualifiedTypeName name="lv.vaits.models.StudentStudyProgram"/>
     <fullyQualifiedTypeName name="lv.vaits.repos.IStudentStudyProgramRepo"/>
     <fullyQualifiedTypeName name="lv.vaits.services.users.IAcademicStaffServices"/>
-    <fullyQualifiedTypeName name="org.springframework.beans.factory.annotation.Autowired"/>
     <fullyQualifiedTypeName name="lv.vaits.repos.users.IAcademicStaffRepo"/>
     <fullyQualifiedTypeName name="lv.vaits.models.users.AcademicStaff"/>
     <fullyQualifiedTypeName name="lv.vaits.models.ThesisApplications"/>
@@ -43,7 +35,6 @@
     <fullyQualifiedTypeName name="jakarta.persistence.ManyToMany"/>
     <fullyQualifiedTypeName name="jakarta.persistence.FetchType"/>
     <fullyQualifiedTypeName name="java.util.Collection"/>
-    <fullyQualifiedTypeName name="java.util.ArrayList"/>
     <fullyQualifiedTypeName name="lombok.Getter"/>
     <fullyQualifiedTypeName name="jakarta.persistence.JoinColumn"/>
     <fullyQualifiedTypeName name="java.lang.Long"/>
@@ -60,4 +51,13 @@
     <fullyQualifiedTypeName name="lv.vaits.user.models.users.Authorities"/>
     <fullyQualifiedTypeName name="org.apache.batik.util.EventDispatcher.Dispatcher"/>
     <fullyQualifiedTypeName name="jakarta.servlet.DispatcherType"/>
+    <fullyQualifiedTypeName name="org.springframework.boot.autoconfigure.jdbc.DataSourceAutoConfiguration"/>
+    <fullyQualifiedTypeName name="lv.vaits.user.confs.SecurityConfig"/>
+    <fullyQualifiedTypeName name="org.springframework.context.annotation.Import"/>
+    <fullyQualifiedTypeName name="lv.vaits.models.users.Person"/>
+    <fullyQualifiedTypeName name="java.util.ArrayList"/>
+    <fullyQualifiedTypeName name="lv.vaits.services.users.impl.PersonServicesImplementation"/>
+    <fullyQualifiedTypeName name="org.springframework.beans.factory.annotation.Autowired"/>
+    <fullyQualifiedTypeName name="lv.vaits.repos.users.IPersonRepo"/>
+    <fullyQualifiedTypeName name="lv.vaits.services.users.IPersonServices"/>
 </qualifiedTypeNameHistroy>
